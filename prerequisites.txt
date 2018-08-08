@@ -1,0 +1,90 @@
+HTML,JS,CSS
+Typescript
+
+Node (nodejs.org)
+NPM
+Angular CLI (Command line Interface) ci.angular.io
+VS code Text editor
+
+
+node -v
+npm -v
+npm install -g @angular/cli
+ng -v
+
+ng new
+The Angular CLI makes it easy to create an application that already works, right out of the box. It already follows our best practices!
+
+ng generate
+Generate components, routes, services and pipes with a simple command. The CLI will also create simple test shells for all of these.
+
+ng serve
+Easily test your app locally while developing.
+
+Test, Lint, Format
+Make your code really shine. Run your unittests or your end-to-end tests with the breeze of a command. Execute the official Angular linter and run clang format.
+
+
+npm install -g create-react-app
+
+//' -g means global. from any location in system we can install reactjs
+once installed react, need to link project folder as below
+
+>create-react-app <folder>
+
+Example:
+---------
+E:\React>create-react-app SampleProject
+Could not create a project called "SampleProject" because of npm naming restrictions:
+  *  name can no longer contain capital letters
+OutPut:
+-------
+Success! Created sampleproject at E:\React\sampleproject
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd sampleproject
+  npm start
+
+sampleproject folder now contain WHAT?
+-------------------------------------
+node_modules, public, src folders and readme.md file
+
+Furthersteps"sampleproject" created
+>cd sampleproject
+>npm start
+Output: it opens the project
+You can now view sampleproject in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://192.168.1.11:3000/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+Above lins shows as below..
+-----------------------------
+To get started, edit src/App.js and save to reload.
+
+REACTJS Concetps:
+***********************************************
+Virtual DOM
+unidirectional Dataflow
+ES6
+JSX
+Components
+ 

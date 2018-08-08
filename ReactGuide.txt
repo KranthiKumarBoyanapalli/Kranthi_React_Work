@@ -1,0 +1,171 @@
+﻿npm install -g create-react-app
+
+//' -g means global. from any location in system we can install reactjs
+once installed react, need to link project folder as below
+
+>create-react-app <folder>
+
+Example:
+---------
+E:\React>create-react-app SampleProject
+Could not create a project called "SampleProject" because of npm naming restrictions:
+  *  name can no longer contain capital letters
+OutPut:
+-------
+Success! Created sampleproject at E:\React\sampleproject
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can�t go back!
+
+We suggest that you begin by typing:
+
+  cd sampleproject
+  npm start
+
+sampleproject folder now contain WHAT?
+-------------------------------------
+node_modules, public, src folders and readme.md file
+
+Furthersteps"sampleproject" created
+>cd sampleproject
+>npm start
+Output: it opens the project
+You can now view sampleproject in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://192.168.1.11:3000/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+Above lins shows as below..
+-----------------------------
+To get started, edit src/App.js and save to reload.
+
+REACTJS Co
+***********************************************
+Virtual DOM
+unidirectional Dataflow
+ES6
+JSX
+Components
+ 
+Virtual DOM: Before this, DOM is referring elements of the HTML becomes nodes in the DOM
+Here, VirtualDom is abstraction of the HTML DOM. It is lightweight object.
+Virtual DOM is React's local and simplified copy fo the HTML DOM.
+Virtual DOM is not invented by React JS.
+singlepage applications.all elements will be in same html page.
+example: var item=document.getelementById("root");
+item.parentNode.removeChild("item");
+
+unidirectional flow:usually All data in our applications flow in a single derection(top to bottom).
+in React it flows down the tree from parent to child. This makes tracking source and destination easy!!!! where data comes from many parts of the application.
+Parent=>child
+
+twoway data binding not supports it referring model changes to View and vise versa
+
+ES6:
+without ES6: 
+-------------
+var a=require('createclass');
+var greeting= createclass{
+    render:function(){
+        return 'hello'
+    }
+}
+with ES6:
+---------
+class greeting extends React.Component{
+    return()
+    {
+        return 'hello'
+    }
+}
+
+JSX: 
+***************
+JSX is a Syntax extension to JAvascript
+
+JSX may remind you of a template laungage.but it comes with full power of JAvascript.
+
+JSX produces react elements
+Example:
+----------
+const element=<h1>hello</h1>;
+it is neither string not html. This combination understands by JSX 
+
+COMPONENTS: //Class style
+*****************************
+header,footer designe kaavalante, each one is comkponent Here
+prathi JS function treated as component.
+
+Example:
+--------
+Regular:
+----------
+function welcome(propos)
+{
+    return '<h1>hello ${prpname}</h1>'
+}
+
+Here, components let yousplit the UI into independent,reusable places. COMPONENTS are like JAVASCRIPT FUNCTIONs
+
+class welcome extends React.Component{
+    render()
+    {
+        return <h1>Hello,{this.props.name}</h1>
+    }
+}
+observations:
+cost element= <welcome name="KT channel"/>
+
+'welcome'is component (ideally class name)
+'name="KT channel"' is a property
+
+****** Life Cycle Component******************
+Mounting=> How we creating component (i.e, class/function) and output ni DOM ki render chestundi.
+
+ComponenetDidMount()= When component created, it calls this. lifecycle hook
+ComponenetDidUnMount()= when component removed.it calls this
+
+*********** Lifecycle Hooks************/
+=> hooks are nothing but Methods
+=>when we create component. it actually first runs the constructor. Hence, is mandatory to run. Constructor runs only ONE time when initially renders
+=> componenet firsttime go to initial "Render()".
+=> if we change something state or props, component do "re-Render()
+=> when we destroy the component, again runs "render()"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
